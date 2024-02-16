@@ -23,9 +23,9 @@ const Player = () => {
         <div className="col-lg-10 offset-lg-2">
           <div className="row justify-content-evenly align-items-center">
             {inPlayer[0] ? (
-              <div className="col-4 d-flex justify-content-between align-items-center">
+              <div className="col-4 d-flex align-items-center">
                 <img src={inPlayer[0].album.cover} alt="foto" />
-                <span className="text-white fw-semibold">
+                <span className="text-white fw-semibold ms-2">
                   {inPlayer[0].title}
                 </span>
               </div>
@@ -38,15 +38,36 @@ const Player = () => {
                   src={shuffleImage}
                   alt="shuffle"
                   style={{ width: "20px" }}
+                  className="ms-2"
                 />
 
-                <img src={prevImage} alt="prev" style={{ width: "20px" }} />
+                <img
+                  src={prevImage}
+                  alt="prev"
+                  style={{ width: "20px" }}
+                  className="ms-2"
+                />
 
-                <img src={playImage} alt="play" style={{ width: "20px" }} />
+                <img
+                  src={playImage}
+                  alt="play"
+                  style={{ width: "20px" }}
+                  className="ms-2"
+                />
 
-                <img src={nextImage} alt="next" style={{ width: "20px" }} />
+                <img
+                  src={nextImage}
+                  alt="next"
+                  style={{ width: "20px" }}
+                  className="ms-2"
+                />
 
-                <img src={repeatImage} alt="repeat" style={{ width: "20px" }} />
+                <img
+                  src={repeatImage}
+                  alt="repeat"
+                  style={{ width: "20px" }}
+                  className="ms-2"
+                />
               </div>
               <div className="progress mt-3">
                 {inPlayer[0] ? (
